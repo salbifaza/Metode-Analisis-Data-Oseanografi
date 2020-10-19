@@ -1,9 +1,8 @@
-indeks=xlsread('contoh.xlsx','con_ONI','C2:C122'); %[CHANGE HERE (column ONI/DMI in Excel)]
-sst=xlsread('contoh.xlsx','con_ONI','D2:D122'); %[CHANGE HERE (column SST in excel)]
+indeks=xlsread('Modul3Andat.xlsx','con_ONI','C2:C122'); %[CHANGE HERE (column ONI/DMI in Excel)]
+sst=xlsread('Modul3Andat.xlsx','con_ONI','D2:D122'); %[CHANGE HERE (column SST in excel)]
 
-[c1,lags1] = xcov(sst,indeks,'coeff'); 
+[c1,lags1] = xcov(indeks,sst,'coeff'); 
 %m1=xcorr(sst,indeks);
-
 
 figure(1)
 plot(lags1,c1,'r'); hold on;

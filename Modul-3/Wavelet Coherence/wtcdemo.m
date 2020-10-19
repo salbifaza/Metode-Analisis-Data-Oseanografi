@@ -14,8 +14,8 @@
 % First we load the two time series into the matrices d1 and d2.
 
 seriesname={'SST' 'ONI'};
-d1=xlsread('contoh.xlsx','con_ONI','D2:D122');
-d2=xlsread('contoh.xlsx','con_ONI','C2:C122');
+d1=xlsread('Modul3Andat.xlsx','con_ONI','D2:D122');
+d2=xlsread('Modul3Andat.xlsx','con_ONI','C2:C122');
 
 %% Change the pdf.
 % The time series of Baltic Sea ice extent is highly bi-modal and we
